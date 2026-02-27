@@ -1,0 +1,586 @@
+{
+ "geoms": {
+ "geom1_point_distribution": {
+ "geom": "point",
+"classed": "geom1_point_distribution",
+"aes": {
+ "x": "val",
+"y": "y_val" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"alpha":      0.5,
+"size":        3 
+},
+"types": {
+ "y": "numeric",
+"x": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_point_distribution": {
+ "geom": "point",
+"classed": "geom2_point_distribution",
+"aes": {
+ "x": "val",
+"y": "y_val",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#0000FF",
+"size":        3,
+"showSelected": "iteration",
+"help_showSelected": "iteration" 
+},
+"types": {
+ "y": "numeric",
+"x": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_tallrect_means": {
+ "geom": "tallrect",
+"classed": "geom3_tallrect_means",
+"aes": {
+ "xmin": "iteration - 0.5",
+"xmax": "iteration + 0.5",
+"clickSelects": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.2,
+"clickSelects": "iteration",
+"help_clickSelects": "iteration" 
+},
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"clickSelects": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_line_means": {
+ "geom": "line",
+"classed": "geom4_line_means",
+"aes": {
+ "x": "iteration",
+"y": "mean_val" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#FF0000" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom5_point_means": {
+ "geom": "point",
+"classed": "geom5_point_means",
+"aes": {
+ "x": "iteration",
+"y": "mean_val",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": "iteration",
+"help_showSelected": "iteration" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"time": {
+ "variable": "iteration",
+"ms":     1000,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ] 
+},
+"selectors": {
+ "iteration": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ],
+"update": [
+ "geom2_point_distribution",
+"geom3_tallrect_means",
+"geom5_point_means" 
+] 
+} 
+},
+"plots": {
+ "distribution": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": [],
+"panel_border": [],
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        6,
+       8,
+      10,
+      12 
+] 
+],
+"y": [
+ [
+        0,
+       1,
+       2,
+       3 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        6,
+       7,
+       8,
+       9,
+      10,
+      11,
+      12,
+      13 
+] 
+],
+"y": [
+ [
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        6,
+       8,
+      10,
+      12 
+],
+"xlab": [
+ "6",
+"8",
+"10",
+"12" 
+],
+"xrange": [ 5.691413, 13.94918 ],
+"xline": false,
+"xticks": false,
+"y": [
+        0,
+       1,
+       2,
+       3 
+],
+"ylab": [
+ "0",
+"1",
+"2",
+"3" 
+],
+"yrange": [    -0.15,     3.15 ],
+"yline": false,
+"yticks": false 
+},
+"xtitle": "Value",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Density",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "6",
+"8",
+"10",
+"12" 
+],
+"ylabs": [
+ "0",
+"1",
+"2",
+"3" 
+],
+"title": "Original Data (Grey) vs Bootstrap Sample (Blue)",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_point_distribution",
+"geom2_point_distribution" 
+] 
+},
+"means": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": [],
+"panel_border": [],
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20 
+] 
+],
+"y": [
+ [
+      8.5,
+       9,
+     9.5,
+      10,
+    10.5 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5,
+     5.5,
+       6,
+     6.5,
+       7,
+     7.5,
+       8,
+     8.5,
+       9,
+     9.5,
+      10,
+    10.5,
+      11,
+    11.5,
+      12,
+    12.5,
+      13,
+    13.5,
+      14,
+    14.5,
+      15,
+    15.5,
+      16,
+    16.5,
+      17,
+    17.5,
+      18,
+    18.5,
+      19,
+    19.5,
+      20,
+    20.5,
+      21 
+] 
+],
+"y": [
+ [
+      8.5,
+    8.75,
+       9,
+    9.25,
+     9.5,
+    9.75,
+      10,
+   10.25,
+    10.5,
+   10.75 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20 
+],
+"xlab": [
+ "1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12",
+"13",
+"14",
+"15",
+"16",
+"17",
+"18",
+"19",
+"20" 
+],
+"xrange": [     -0.5,     21.5 ],
+"xline": false,
+"xticks": false,
+"y": [
+      8.5,
+       9,
+     9.5,
+      10,
+    10.5 
+],
+"ylab": [
+ "8.5",
+"9.0",
+"9.5",
+"10.0",
+"10.5" 
+],
+"yrange": [ 8.472718, 10.75282 ],
+"yline": false,
+"yticks": false 
+},
+"xtitle": "Iteration",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Sample Mean",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12",
+"13",
+"14",
+"15",
+"16",
+"17",
+"18",
+"19",
+"20" 
+],
+"ylabs": [
+ "8.5",
+"9.0",
+"9.5",
+"10.0",
+"10.5" 
+],
+"title": "Mean of Bootstrap Sample over Iterations",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom3_tallrect_means",
+"geom4_line_means",
+"geom5_point_means" 
+] 
+} 
+},
+"source": "https://github.com/NandaniAggarwal/animint_R/blob/main/bootid.R",
+"title": "Bootstrapping i.i.d Data Port" 
+}
